@@ -7,4 +7,8 @@ Create your `ddclient.conf` file (see https://sourceforge.net/p/ddclient/wiki/Ho
 
 Run:
 
-    docker run -d --name=ddclient --net=host -v /path/to/ddclient.conf:/etc/ddclient.conf mmiglier/docker-ddclient
+    docker run -d \
+        --name=ddclient \
+        --net=host \
+        -v /path/to/ddclient.conf:/etc/ddclient.conf \
+        mmiglier/docker-ddclient
