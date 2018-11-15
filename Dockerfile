@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN \
    apt-get update -q && \
-   apt-get install -qy ddclient ssmtp/trusty
+   apt-get install -qy ddclient ssmtp
 
 ADD start.sh /start.sh
 RUN chmod +x /start.sh
